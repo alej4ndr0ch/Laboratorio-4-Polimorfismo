@@ -17,6 +17,12 @@ public class Main {
         this.controlador = controlador;
     }
 
+    public static void main(String[] args) {
+        LoteController controlador = new LoteController();
+        Main vista = new Main(controlador);
+        vista.mostrarMenu();
+    }
+
     public void mostrarMenu() {
         int opcion;
 
